@@ -1,0 +1,69 @@
+.divider {
+  display: inline-block;
+  border-bottom: 2.43778px solid #186532;
+  width: 480px;
+}
+.divider-icon {
+  display: inline-block;
+  border-bottom: 2.43778px solid #186532;
+  width: 20px;
+}
+
+.formMainContainer {
+  width: 500px;
+}
+
+.buttonContainer {
+  width: 500px;
+}
+
+@media (min-width: 550.1px) and (max-width: 850px) {
+  .logInMainContainer {
+    width: 490px;
+    height: 600px;
+  }
+  .logInHeader {
+    height: 100px;
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .logInMainContainer {
+    width: 380px;
+    height: 380px;
+  }
+  .logInHeader {
+    height: 100px;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logInHeader1 {
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .formMainContainer {
+    margin-left: 5px;
+    height: 100px;
+    width: 365px;
+  }
+  .buttonContainer {
+    width: 365px;
+  }
+  .text-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .ending-text {
+    margin-top: 2px;
+  }
+}

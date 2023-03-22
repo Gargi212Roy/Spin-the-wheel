@@ -1,0 +1,67 @@
+.widthFinal {
+  width: 500px;
+}
+
+@media (min-width: 550.1px) and (max-width: 850px) {
+  .responsive {
+    margin-left: 28px;
+  }
+
+  .responsive-h3 {
+    font-size: 18px;
+  }
+  .responsive-h1 {
+    font-size: 35px;
+  }
+
+  .responsive-coupon {
+    width: 250px;
+    font-size: 30px;
+  }
+
+  .responsive-copy {
+    font-size: 30px;
+  }
+
+  .responsive-txt {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .widthFinal {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .responsive-h3 {
+    font-size: 18px;
+  }
+  .responsive-h1 {
+    font-size: 30px;
+  }
+
+  .responsive-coupon {
+    width: 180px;
+    font-size: 30px;
+  }
+
+  .responsive-copy {
+    width: 100px;
+    padding-left: 8px;
+    padding-right: 12px;
+    padding-top: 4px;
+    font-size: 20px;
+  }
+  .response {
+    width: 280px;
+  }
+  .responsive-txt {
+    font-size: 8px;
+  }
+}

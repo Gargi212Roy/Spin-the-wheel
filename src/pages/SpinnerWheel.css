@@ -1,0 +1,38 @@
+.spinnerMainDiv {
+  display: flex;
+  justify-content: flex-start;
+  justify-items: center;
+  align-items: center;
+}
+
+.image {
+  align-self: center;
+
+  height: 420px;
+  width: 420px;
+  z-index: 1;
+}
+
+@media (min-width: 550.1px) and (max-width: 850px) {
+  .spinnerMainDiv {
+    position: absolute;
+    left: -26%;
+    top: 25%;
+  }
+  .image {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 550px) {
+  .spinnerMainDiv {
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .image {
+    width: 240px;
+    height: 240px;
+  }
+}
