@@ -2,6 +2,41 @@
   width: 500px;
 }
 
+@media (max-width: 380px) {
+  .widthFinal {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .responsive-h3 {
+    font-size: 15px;
+  }
+  .responsive-h1 {
+    font-size: 22px;
+  }
+  .responsive-coupon {
+    width: 220px;
+    font-size: 22px;
+  }
+
+  .responsive-copy {
+    width: 80px;
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 4px;
+    font-size: 20px;
+  }
+  .response {
+    width: 300px;
+  }
+}
+
 @media (min-width: 550.1px) and (max-width: 850px) {
   .responsive {
     margin-left: 28px;
@@ -28,7 +63,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 380.1px) and (max-width: 550px) {
   .widthFinal {
     width: 400px;
     margin-bottom: 50px;

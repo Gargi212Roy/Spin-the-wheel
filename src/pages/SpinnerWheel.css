@@ -13,6 +13,18 @@
   z-index: 1;
 }
 
+@media (max-width: 380px) {
+  .spinnerMainDiv {
+    padding-top: 15px;
+  }
+  .image {
+    align-self: center;
+    height: 210px;
+    width: 222px;
+    z-index: 1;
+  }
+}
+
 @media (min-width: 550.1px) and (max-width: 850px) {
   .spinnerMainDiv {
     position: absolute;
@@ -25,7 +37,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 380.1px) and (max-width: 550px) {
   .spinnerMainDiv {
     height: 220px;
     display: flex;

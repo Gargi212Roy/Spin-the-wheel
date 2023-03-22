@@ -128,8 +128,10 @@ function LogIn() {
           <span className="text-slate-100 text-2xl ">Try Your luck</span>
         </button>
         <div className="flex flex-row italic text-xs text-end">
-          <p className="">*You can spin the wheel only once!</p>
-          <p>*If you win, you can claim your coupon for 10 minutes only!</p>
+          <p>*You can spin the wheel only once!</p>
+          <p className="size">
+            *If you win, you can claim your coupon for 10 minutes only!
+          </p>
         </div>
         <div className="flex flex-row mt-2 text-bold text-xl justify-end ending-text ">
           <button>No, I don’t feel lucky</button>
