@@ -32,19 +32,11 @@ function LogIn() {
 
     setFormError(validateData(userData));
 
-    console.log("formerror inside handle submit");
-    console.log(formError);
-    console.log("Object.keys(formError)");
-    console.log(Object.keys(formError).length);
-
     if (Object.keys(formError).length === 0) {
       console.log("validating form");
       console.log(mockAPI());
-
       setIsSubmit(true);
       if (isSubmit) {
-        console.log("value of isSubmit inside handleSubmit");
-        console.log(isSubmit);
         navigate("/spinner");
       }
     }
@@ -55,8 +47,6 @@ function LogIn() {
     console.log(isSubmit);
 
     if (Object.keys(formError).length === 0 && isSubmit) {
-      console.log("Object.keys(formError).length inside useEffect");
-      console.log(Object.keys(formError).length);
       console.log(userData);
     }
   }, [formError]);
