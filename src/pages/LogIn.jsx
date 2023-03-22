@@ -29,27 +29,16 @@ function LogIn() {
     const credentials = { ...userData, id: uuid() };
     console.log(credentials);
     setDatabase([...database, credentials]);
+    const errors = validateData(userData);
+    setFormError(errors);
 
-    setFormError(validateData(userData));
-
-    if (Object.keys(formError).length === 0) {
+    if (Object.keys(errors).length === 0) {
       console.log("validating form");
-      console.log(mockAPI());
       setIsSubmit(true);
-      if (isSubmit) {
-        navigate("/spinner");
-      }
+
+      navigate("/spinner");
     }
   };
-
-  useEffect(() => {
-    console.log(formError);
-    console.log(isSubmit);
-
-    if (Object.keys(formError).length === 0 && isSubmit) {
-      console.log(userData);
-    }
-  }, [formError]);
 
   const validateData = (values) => {
     const err = {};
@@ -72,7 +61,7 @@ function LogIn() {
 
   const mockAPI = () => {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve("Success"), 500);
+      setTimeout(() => resolve("Success"), 5000);
     });
   };
 
