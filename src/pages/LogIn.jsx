@@ -61,7 +61,7 @@ function LogIn() {
 
   const mockAPI = () => {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve("Success"), 5000);
+      setTimeout(() => resolve("Success"), 500);
     });
   };
 
